@@ -8,7 +8,7 @@ var lyrics = document.querySelector("#lyrics");
 function updateLyrics() {
   var time = Math.floor(audio.currentTime);
   var currentLine = lyricsData.find(
-    (line) => time >= line.time && time < line.time + 6
+    (line) => time >= line.time && time < line.time + 10
   );
 
   if (currentLine) {
